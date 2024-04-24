@@ -5,16 +5,7 @@
 
 }
 
-#flex {
-    display: flex;
-    background: black;
-    color: white;
-    justify-content: space-around;
-    grid-column: 1/5;
-    grid-row: 2/3;
-    align-items: center;
 
-}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -22,16 +13,27 @@ body {
     font-style: normal;
     display: grid;
     height: 100vh;
-    grid-template-columns: 300px 300px 300px 380px;
-    grid-template-rows: 1fr 50px 3fr 2fr 1fr;
+    grid-template-columns: 300px 400px 300px 380px;
+    grid-template-rows: 1fr 100px 3fr 2fr 1fr;
+}
+
+#flex {
+    display: flex;
+    background: black;
+    color: white;
+    justify-content: space-around;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    align-items: center;
+
 }
 
 header {
+    display: grid;
     background: rgb(78, 73, 73);
     color: white;
-    padding: 2rem;
     grid-column: 1 / 5;
-    grid-row: 1/4;
+    grid-row: 1/3;
 }
 
 
