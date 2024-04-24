@@ -8,6 +8,7 @@
 
 
 body {
+    display: grid;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -39,7 +40,6 @@ header {
 
 
 main {
-    display: grid;
     background: rgb(171, 167, 167);
     grid-column: 1 / 4;
     grid-row: 3/5;
@@ -55,7 +55,7 @@ main {
 }
 
 footer {
-    display: grid;
+
     background: rgb(49, 47, 47);
     color: white;
     padding: 2rem;
