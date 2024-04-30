@@ -45,7 +45,7 @@ main {
     display: grid;
     grid-template-columns: 10px 200px 200px 290px 30px;
     grid-template-rows: 30px 50px 50px 50px 350px;
-    width: 1000px;
+    max-width: 1000px;
     position: initial;
 }
 
