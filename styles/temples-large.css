@@ -44,9 +44,11 @@ nav {
     grid-column: 1;
 }
 
+h2 {
+    text-align: center;
+}
 
-
-main {
+#grid {
     max-inline-size: 100%;
     writing-mode: horizontal-tb;
     line-height: 30px;
@@ -68,10 +70,6 @@ main {
 }
 
 
-h2 {
-    text-align: center;
-    padding: 20px;
-}
 
 footer {
     background-color: bisque;
