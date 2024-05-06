@@ -35,7 +35,7 @@ a {
     color: white;
 }
 
-nav :hover {
+nav a:hover {
     text-decoration: overline;
 }
 
