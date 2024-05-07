@@ -1,60 +1,75 @@
-@media screen and (max-width: 480px) {
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+#menu::before {
+    content: "☰";
+}
 
-    .navigation {
-        display: none;
-    }
+#menu.open::before {
+    content: "❎";
+}
 
-    h1 {
-        font-size: 25px;
-    }
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
 
-    body {
-        font-family: Roboto, sans-serif;
-    }
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
 
-    #grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
 
-    a {
-        display: none;
-    }
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
 
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
 
-    #menu {
-        display: block;
-        font-size: 2rem;
-        font-weight: 400;
-        text-decoration: none;
-        padding: .20rem .15rem;
-        background-color: blueviolet;
-        color: #000;
-    }
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
 
-    #menu::after {
-        content: "≡";
-    }
+.stuff {
+    margin: 0.5m;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+}
 
-    #menu.show::after {
-        content: "X";
-    }
+footer {
+    background-color: bisque;
+    text-align: center;
+    padding: 10px;
+    color: #224870;
+}
 
-    li a {
-        display: block;
-    }
-
-
-    .show.navigation {
-        display: block;
-        background-color: blueviolet;
-    }
-
-
+#grid {
+    display: grid;
+    grid-template-columns: 1fr;
 }
