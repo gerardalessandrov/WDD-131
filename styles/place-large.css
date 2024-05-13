@@ -52,7 +52,7 @@
         display: none;
     }
 
-    h2::after {
+    .section2 h2::after {
 
         content: "⛅";
         display: inline;
