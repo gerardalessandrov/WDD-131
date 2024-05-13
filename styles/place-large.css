@@ -49,9 +49,13 @@
     }
 
     .icon {
-        width: 55px;
-        height: 50px;
-        display: inline-block;
+        display: none;
+    }
+
+    h2::after {
+
+        content: "⛅";
+        display: inline;
     }
 
     .section2 {
