@@ -1,0 +1,44 @@
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+        background-color: #333;
+        color: aliceblue;
+    }
+
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+
+    .grid {
+        max-inline-size: 100%;
+        writing-mode: horizontal-tb;
+        line-height: 30px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        margin: 1rem auto;
+        padding: 1rem;
+
+    }
+
+
+
+
+
+}

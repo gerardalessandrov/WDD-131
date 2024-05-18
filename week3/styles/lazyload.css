@@ -1,0 +1,19 @@
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    /* Opacidad inicial */
+    to {
+        opacity: 0;
+    }
+
+    /* Opacidad final */
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: auto;
+    animation: fade 2s ease-in-out;
+}
