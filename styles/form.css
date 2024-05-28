@@ -1,0 +1,56 @@
+body {
+    background-color: #A2E3C4;
+    padding: 10px;
+    font-family: Roboto,
+        Arial,
+        sans-serif;
+    margin: 0;
+    text-align: left;
+    display: block;
+
+    margin-right: 10px;
+
+}
+
+footer {
+    background-color: #A6A2A2;
+    width: 400px;
+    padding: 10px;
+    margin-top: 20px;
+    height: auto;
+}
+
+h2 {
+    color: white;
+    background-color: black;
+
+    width: 400px;
+    text-align: center;
+}
+
+.stars input[type=radio] {
+    margin-right: 10px;
+    font-size: large;
+}
+
+.stars {
+    display: flex;
+    flex:1;
+}
+
+
+
+#text-area {
+    width: 400px;
+    height: 100px;
+}
+
+input[type=date],
+input[type=submit] {
+    width: 400px;
+}
+
+input[type=text] {
+    margin-bottom: 40px;
+
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"> </script>
+    <script defer src="scripts/getdates.js"> </script>
+    <title>Document</title>
+</head>
+<h2>Product Review</h2>
+
+<body>
+    <label>Product Name</label>
+    <form action="review.html" method="get">
+        <select id="name" name="name" required>
+            <option value="product" disabled>Select a product
+            <option value="carrots">Carrots</option>
+            <option value="rice">Rice</option>
+            <option value="chicken">Chicken</option>
+            <option value="legums">Legums</option>
+            </option>
+        </select>
+        <br>
+        Overall Rating
+        <div class="stars">
+            <input type="radio" id="fivestar" name="star" value="5" required>
+
+
+            <input type="radio" id="fourstar" name="star" value="4" required>
+
+
+            <input type="radio" id="threestar" name="star" value="3" required>
+            <input type="radio" id="twostar" name="star" value="2" required>
+            <input type="radio" id="onestar" name="star" value="1" required>
+        </div>
+        <label for="fivestar">★</label>
+        <label for="fourstar">★★</label>
+        <label for="threestar">★★★</label>
+        <label for="twostar">★★★★</label>
+        <label for="onestar">★★★★★</label>
+        <br>
+
+        <label> Date Installation
+            <br>
+
+            <input type="date" id="date" name="date-installation" required pattern="\d{4}-\d{2}-\d{2}"
+                placeholder="YYYY-MM-DD"><br>
+            <br>
+            <label>Useful Features</label>
+            <br>
+            <input type="checkbox" id="box1" name="feature" value="durability">Durability
+            <br>
+            <input type="checkbox" id="box2" name="feature" value="easer">Easer to use
+            <br>
+            <input type="checkbox" id="box3" name="feature" value="performance">Performance
+            <br>
+            <input type="checkbox" id="box4" name="feature" value="design">Design
+        </label>
+        <br>
+        <label>Written Description
+            <br>
+            <textarea id="text-area" name="text"></textarea>
+        </label>
+        <br>
+        <label>Your Name(optional)
+            <br>
+            <input type="text" id="name" name="user-name">
+            <br>
+        </label>
+
+        <input type="submit" value="post-review">
+
+    </form>
+    <footer id="currentyear">
+        <span class="color" id="year"></span>
+        <br>
+        <span class="color" id="short"></span>
+    </footer>
+</body>
+
+</html>
