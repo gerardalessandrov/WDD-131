@@ -27,15 +27,19 @@
         <br>
         <label for="overall raiting">Overall Rating</label>
         <div class="stars">
-            <input type="radio" id="fivestar" name="star" value="5" required>
+            <input type="radio" id="onestar" name="star" value="5" required><label for="onestar"></label>
 
 
-            <input type="radio" id="fourstar" name="star" value="4" required>
+            <input type="radio" id="twostar" name="star" value="4" required><label for="twostar"></label>
 
 
-            <input type="radio" id="threestar" name="star" value="3" required>
-            <input type="radio" id="twostar" name="star" value="2" required>
-            <input type="radio" id="onestar" name="star" value="1" required>
+
+            <input type="radio" id="threestar" name="star" value="3" required><label for="threestar"></label>
+
+            <input type="radio" id="fourstar" name="star" value="2" required><label for="fourstar"></label>
+
+            <input type="radio" id="fivestar" name="star" value="1" required><label for="fivestar"></label>
+
         </div>
 
         <br>
@@ -46,15 +50,14 @@
         <input type="date" id="date" name="date-installation" required pattern="\d{4}-\d{2}-\d{2}"
             placeholder="YYYY-MM-DD"><br>
         <br>
-        <label for="useful-features">Useful Features</label>
+        <legend>Useful Features:</legend>
         <br>
-        <input type="checkbox" id="box1" name="feature" value="durability">Durability
+        <input type="checkbox" id="box1" name="feature" value="durability"><label for="durability">Durability</label>
         <br>
-        <input type="checkbox" id="box2" name="feature" value="easer">Easer to use
+        <input type="checkbox" id="box2" name="feature" value="easer"><label for="easer-to-use">Easer to use</label>
         <br>
-        <input type="checkbox" id="box3" name="feature" value="performance">Performance
-        <br>
-        <input type="checkbox" id="box4" name="feature" value="design">Design
+        <input type="checkbox" id="box3" name="feature" value="performance"><label for="performance">Performance</label>
+        <input type="checkbox" id="box4" name="feature" value="design"><label for="design">Design</label>
 
         <br>
         <label for="written-description">Written Description</label>
