@@ -19,7 +19,7 @@
     <label for="name-1">Product Name:</label>
     <form action="review.html" method="get">
         <select id="name-1" name="name" required>
-            <option value="" disabled selected>Seleccione una opción...</option>
+            <option value="" disabled selected>Choose an option</option>
             <option value="carrots">Carrots</option>
             <option value="rice">Rice</option>
             <option value="chicken">Chicken</option>
@@ -27,18 +27,18 @@
         </select>
         <br>
         Overall Rating
-        <div class="stars">
+        <div class="star-rating">
 
-            <label for="onestar"></label>
-            <input type="radio" id="onestar" name="star" value="5" required>
-            <label for="twostar"></label>
-            <input type="radio" id="twostar" name="star" value="4" required>
-            <label for="threestar"></label>
-            <input type="radio" id="threestar" name="star" value="3" required>
-            <label for="fourstar"></label>
-            <input type="radio" id="fourstar" name="star" value="2" required>
-            <label for="fivestar"></label>
-            <input type="radio" id="fivestar" name="star" value="1" required>
+            <label for="onestar">★</label>
+            <input type="radio" id="onestar" name="star" value="0" required>
+            <label for="twostar">★★</label>
+            <input type="radio" id="twostar" name="star" value="0" required>
+            <label for="threestar">★★★</label>
+            <input type="radio" id="threestar" name="star" value="0" required>
+            <label for="fourstar">★★★★</label>
+            <input type="radio" id="fourstar" name="star" value="0" required>
+            <label for="fivestar">★★★★★</label>
+            <input type="radio" id="fivestar" name="star" value="0" required>
 
         </div>
 
@@ -56,6 +56,7 @@
         <input type="checkbox" id="box2" name="feature" value="easer"><label for="box2">Easer to use</label>
         <br>
         <input type="checkbox" id="box3" name="feature" value="performance"><label for="box3">Performance</label>
+        <br>
         <input type="checkbox" id="box4" name="feature" value="design"><label for="box4">Design</label>
 
         <br>
