@@ -14,7 +14,7 @@
 <h1>Product Review</h1>
 
 <body>
-    <label>Product Name</label>
+    <label for="product-reviw">Product Name:</label>
     <form action="review.html" method="get">
         <select id="name" name="name" required>
             <option value="product" disabled>Select a product
@@ -25,7 +25,7 @@
             </option>
         </select>
         <br>
-        <label>Overall Rating</label>
+        <label for="overall raiting">Overall Rating</label>
         <div class="stars">
             <input type="radio" id="fivestar" name="star" value="5" required>
 
@@ -40,13 +40,13 @@
 
         <br>
 
-        <label>Date Installation</label>
+        <label for="date-installation">Date Installation</label>
         <br>
 
         <input type="date" id="date" name="date-installation" required pattern="\d{4}-\d{2}-\d{2}"
             placeholder="YYYY-MM-DD"><br>
         <br>
-        <label>Useful Features</label>
+        <label for="useful-features">Useful Features</label>
         <br>
         <input type="checkbox" id="box1" name="feature" value="durability">Durability
         <br>
@@ -57,18 +57,18 @@
         <input type="checkbox" id="box4" name="feature" value="design">Design
 
         <br>
-        <label>Written Description</label>
+        <label for="written-description">Written Description</label>
         <br>
 
         <textarea id="text-area" name="text"></textarea>
 
         <br>
-        <label>Your Name(optional)</label>
+        <label for="your-name">Your Name(optional)</label>
         <br>
         <input type="text" id="name" name="user-name">
         <br>
 
-        <label>Form Submission button</label>
+
         <input type="submit" value="post-review">
 
     </form>
