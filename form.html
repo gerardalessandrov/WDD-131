@@ -11,13 +11,15 @@
     <script defer src="scripts/getdates.js"> </script>
     <title>Product Review</title>
 </head>
-<h1>Product Review</h1>
 
 <body>
-    <label for="product-reviw">Product Name:</label>
+    <h1>Product Review</h1>
+
+
+    <label for="name-1">Product Name:</label>
     <form action="review.html" method="get">
-        <select id="name" name="name" required>
-            <option value="product" disabled>Select a product
+        <select id="name-1" name="name" required>
+            <option value="" disabled selected>Seleccione una opción...</option>
             <option value="carrots">Carrots</option>
             <option value="rice">Rice</option>
             <option value="chicken">Chicken</option>
@@ -25,7 +27,7 @@
             </option>
         </select>
         <br>
-        <label for="overall raiting">Overall Rating</label>
+        <label for="overall-raiting">Overall Rating</label>
         <div class="stars">
             <input type="radio" id="onestar" name="star" value="5" required><label for="onestar"></label>
 
@@ -44,20 +46,19 @@
 
         <br>
 
-        <label for="date-installation">Date Installation</label>
+        <label for="date">Date Installation</label>
         <br>
 
-        <input type="date" id="date" name="date-installation" required pattern="\d{4}-\d{2}-\d{2}"
-            placeholder="YYYY-MM-DD"><br>
+        <input type="date" id="date" name="date-installation" required placeholder="YYYY-MM-DD"><br>
         <br>
-        <legend>Useful Features:</legend>
+        Useful Features:
         <br>
-        <input type="checkbox" id="box1" name="feature" value="durability"><label for="durability">Durability</label>
+        <input type="checkbox" id="box1" name="feature" value="durability"><label for="box1">Durability</label>
         <br>
-        <input type="checkbox" id="box2" name="feature" value="easer"><label for="easer-to-use">Easer to use</label>
+        <input type="checkbox" id="box2" name="feature" value="easer"><label for="box2">Easer to use</label>
         <br>
-        <input type="checkbox" id="box3" name="feature" value="performance"><label for="performance">Performance</label>
-        <input type="checkbox" id="box4" name="feature" value="design"><label for="design">Design</label>
+        <input type="checkbox" id="box3" name="feature" value="performance"><label for="box3">Performance</label>
+        <input type="checkbox" id="box4" name="feature" value="design"><label for="box4">Design</label>
 
         <br>
         <label for="written-description">Written Description</label>
