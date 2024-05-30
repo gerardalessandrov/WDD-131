@@ -148,4 +148,5 @@ function createTempleCard(filteredTemples) {
         card.appendChild(img);
         grid.appendChild(card);
     });
+    
 }
