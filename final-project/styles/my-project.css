@@ -10,8 +10,6 @@
         right: 1rem;
     }
 
-
-
     .border {
         display: flex;
     }
@@ -89,10 +87,6 @@
 
     }
 
-
-
-
-
     #grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -101,9 +95,5 @@
     .open a {
         display: block;
     }
-
-
-
-
 
 }
