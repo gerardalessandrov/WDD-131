@@ -1,12 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100;400;700&display=swap');
+@media (max-width: 400px) {
+    #menu {
+        background: none;
+        font-size: 1.5rem;
+        border: 0;
+        color: black;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
 
 
 
-.grid {
-    display: block;
-}
+    .border {
+        display: flex;
+    }
+
+    img {
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    img.logo {
+        max-height: 80px;
+        max-width: 80px;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "❎";
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        color: white;
+
+        width: 260px;
+    }
+
+    .home::after {
+        content: "🏠";
+    }
+
+    .cupcake::after {
+        content: "🥟";
+    }
+
+    .hamburguer::after {
+        content: "🍔";
+    }
+
+    .contact::after {
+        content: "🗒️";
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: white;
 
 
-#menu ::before {
-    content: "☰";
+    }
+
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .open a {
+        display: block;
+    }
+
+    body {
+        background-color: #3A3335;
+        color: white;
+        text-align: center;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+
+
+
+
+
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .open a {
+        display: block;
+    }
+
+
+
+
+
 }

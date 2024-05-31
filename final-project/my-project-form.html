@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gerard-Vigo-Rodrigues">
+    <meta name="description" content="This page provide a from to be fullfileed by the user">
+    <link rel="stylesheet" href="styles/my-project-form.css">
+    <script defer src="scripts/my-project-form.js"></script>
+    <title>Charitos</title>
+</head>
+
+<body>
+    <h1>Pedidos Online</h1>
+    <label for="name">Nombre del Producto</label>
+    <form action="review.html" method="get">
+        <select id="name" name="name" required>
+            <option value="" disabled selected>Choose an option</option>
+            <option id="Manzana" value="pasteldemanzana">Pastel de manzana</option>
+            <option id="Platano" value="pasteldeplatano">Pastel de platano</option>
+            <option id="Pañuelo" value="pañuelo">Pañuelo</option>
+            <option id="Botija" value="botija">Botija</option>
+            <option id="Miloja" value="miloja">Miloja</option>
+            <option id="Empanadadepollo" value="empanadasdepollo">Empanadas de Pollo</option>
+            <option id="Empanadadepizza" value="empanadasdepizza">Empanadas de Pizza</option>
+            <option id="Salchipollo" value="salchipollo">Salchipollo</option>
+            <option id="Salchipapa" value="salchipapa">Salchipapa</option>
+            <option id="Hamburguesa" value="hamburguesa">Hamburguesa de Carne</option>
+        </select>
+        <br>
+        <br>
+        <label for="date">Fecha del pedido</label>
+        <br>
+        <input type="date" id="date" name="fechadelpedido" required>
+        <br>
+        <label for="number">Ingresa tu numero de Telefono</label>
+        <br>
+        <input type="tel" id="number" name="numerodetelefono" value="(+51)" required>
+        <br>
+        <label for="address">Ingresa tu direccion en caso de delivery</label>
+        <br>
+        <input type="text" id="address" name="direccion" placeholder="Escribe una direccion">
+        <br>
+        <label for="your-name">Your Name(opcional)</label>
+        <br>
+        <input type="text" id="your-name" name="your_name">
+        <br>
+        <label for="number">Ingresa la descripcion del producto(opcional)</label>
+        <br>
+        <textarea id="text-area" name="text"></textarea>
+        <br>
+        <input type="submit" value="Envia tu informacion">
+
+    </form>
+    <footer>
+        <h3>Si deseas mas informacion <br>contactanos
+            a este numero</h3>
+        <span>973474568 o 951472626</span>
+    </footer>
+</body>
+
+</html>
