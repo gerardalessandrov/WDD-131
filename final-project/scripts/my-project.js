@@ -6,64 +6,64 @@ hambutton.addEventListener("click", () => {
     ;
 });
 const products = [{
-    productName: "Empanadas",
-    flavor: "pollo",
+    productName: "Empanadas de pollo",
+    descripcion: "Empanadas rellenas de lomo de pollo",
     price: 2.50,
     imageUrl: "https://www.superpollo.cl/img/recetas/empanadas-de-pollo.webp"
 },
 {
-    productName: "Empanada de pizza",
-    flavor: "jamon,queso,Pomarola y oregano",
+    productName: "Empanadas de pizza",
+    descripcion: "Empanadas rellenas de jamon,queso,pomarola y oregano",
     price: 3.00,
     imageUrl: "https://www.caciquefoods.com/wp-content/uploads/2015/08/cacique-empanada-final-h-blue-1.jpg"
 
 },
 {
-    productName: "Pastel de manzana",
-    flavor: "manzana",
+    productName: "Pastel de manzana ",
+    descripcion: "Pastel relleno de manzana y dulce de azucar",
     price: 2.50,
     imageUrl: "https://katenm.pe/wp-content/uploads/2021/08/pastel-de-manzana.jpg"
 },
 {
-    productName: "Pastel de platano",
-    flavor: "platano",
+    productName: "Pastel de platano ",
+    descripcion: "Pastel relleno de platano y dulce de azucar",
     price: 2.50,
     imageUrl: "https://www.labuena.com.co/wp-content/uploads/2021/01/3-formas-de-preparar-platanos-rellenos.jpg"
 },
 {
     productName: "Pañuelo",
-    flavor: "manjarblanco",
+    descripcion: "Pastel relleno de manjarblanco",
     price: 2.50,
     imageUrl: "https://i.ytimg.com/vi/8S3HV32u0jU/maxresdefault.jpg"
 },
 {
     productName: "Miloja",
-    flavor: "manjarblanco",
+    descripcion: "Pastel relleno de manjarblanco y azucar impalpable",
     price: 2.50,
     imageUrl: "https://www.elsaloncito.com/wp-content/uploads/2019/11/DSC_0237-e1581705328510.jpg"
 
 },
 {
     productName: "Botija",
-    flavor: "manjarblanco",
+    descripcion: "Pastel relleno de manjarblanco",
     price: 2.50,
     imageUrl: "https://www.midiariodecocina.com/wp-content/uploads/2021/09/Cachitos-con-manjar02.jpg"
 },
 {
     productName: "Salchipollo",
-    flavor: "papa y pollo",
+    descripcion: "Pollo,papas fritas,ensalada y cremas",
     price: 8.00,
     imageUrl: "https://i.ytimg.com/vi/J-HmZyk4SA8/maxresdefault.jpg"
 },
 {
     productName: "Salchipapa",
-    flavor: "papa y hotdog",
+    descripcion: "Papas fritas,hotdog y ensalada",
     price: 5.00,
     imageUrl: "https://www.ytuqueplanes.com/imagenes/fotos/novedades/dia-salchipapa-2020.jpg"
 },
 {
-    productName: "Hamburguesa ",
-    flavor: "carne",
+    productName: "Hamburguesa de Carne",
+    descripcion: "Pan,hamburguesa de carne,ensalada y papas al hilo",
     price: 5.00,
     imageUrl: "https://media.ambito.com/p/e8a1ff58fb2d15a7740287ae7cea4db5/adjuntos/239/imagenes/041/540/0041540110/1200x675/smart/galpon-hamburguesa-2jpg.jpg"
 }
@@ -102,8 +102,8 @@ function createProductsCard(filteredProducts) {
         let flavor = document.createElement("p");
         let img = document.createElement("img");
         name.textContent = product.productName;
-        flavor.innerHTML = `<span class="label">Sabor:</span>${product.flavor}`;
-        price.innerHTML = `<span class="label">Precio:S/</span>${product.price}`;
+        flavor.innerHTML = `<span class="label">Descripcion:</span> ${product.descripcion}`;
+        price.innerHTML = `<span class="label">Precio:S/</span> ${product.price}`;
         img.setAttribute("src", product.imageUrl);
         img.setAttribute("alt", `${product.name}Product`);
         img.setAttribute("width", 400);
