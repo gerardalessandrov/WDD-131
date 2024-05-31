@@ -21,7 +21,7 @@ const products = [{
 {
     productName: "Pastel de manzana",
     flavor: "manzana",
-    price: 3.00,
+    price: 2.50,
     imageUrl: "https://katenm.pe/wp-content/uploads/2021/08/pastel-de-manzana.jpg"
 },
 {
