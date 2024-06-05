@@ -8,12 +8,11 @@ body {
 
 :root {
     --primary-color: #084B83;
-    --secondary-color: #;
+    --secondary-color: #BFC0C0;
     --accent1-color: #BFC0C0;
-    --accent2-color: #;
-    --heading-font: "  font-family: " Inter", sans-serif;";
-    --paragraph-font: font-family: "Roboto", sans-serif;
-    ;
+    --accent2-color: #BFC0C0;
+    --heading-font: " Inter", "sans-serif";
+    --paragraph-font: "Roboto"," sans-serif";
     --nav-background-color: #96E072;
     --nav-link-color: #FFF1D0;
     --nav-hover-link-color: #7E6B8F;
